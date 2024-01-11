@@ -1,12 +1,27 @@
-﻿<guest>
-	<first_name>qr23</first_name>
-	<last_name>123123</last_name>
-	<middle_name>123</middle_name>
-	<num_of_guests>123</num_of_guests>
-	<room>123</room>
-	<passport>123</passport>
-	<price>123</price>
-	<id>123</id>
-	<room_level>1</room_level>
-</guest>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Customers>
+  <Customer>
+    <Date>2024-01-09T00:00:00</Date>
+    <FirstName>12</FirstName>
+    <LastName>12</LastName>
+    <Patronymic>12</Patronymic>
+    <PeopleCount>12</PeopleCount>
+    <RoomNumber>12</RoomNumber>
+    <PassportData>12</PassportData>
+    <RoomPrice>12</RoomPrice>
+    <CustomerCode>12</CustomerCode>
+    <RoomLevel>12</RoomLevel>
+  </Customer>
+  <Customer>
+    <Date>2024-01-16T00:00:00</Date>
+    <FirstName>12</FirstName>
+    <LastName>11</LastName>
+    <Patronymic>1</Patronymic>
+    <PeopleCount>1</PeopleCount>
+    <RoomNumber>1</RoomNumber>
+    <PassportData>1</PassportData>
+    <RoomPrice>1</RoomPrice>
+    <CustomerCode>1</CustomerCode>
+    <RoomLevel>1</RoomLevel>
+  </Customer>
+</Customers>
