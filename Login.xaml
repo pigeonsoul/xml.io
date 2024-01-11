@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="250" Width="300">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Label Content="Username:" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+		<TextBox x:Name="usernameTextBox" Grid.Row="0" Margin="80,0,0,0" Width="150" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+		<Label Content="Password:" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+		<PasswordBox x:Name="passwordBox" Grid.Row="1" Margin="80,0,0,0" Width="150" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+		<Button x:Name="loginButton" Content="Login" Grid.Row="2" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Click="LoginButton_Click"/>
+		<Label x:Name="errorMessageLabel" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	</Grid>
+</Window>

@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp1.AddCustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить клиента" Height="680" Width="426" MinWidth="426" MinHeight="680">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Text="ВВЕДИТЕ ДАННЫЕ КЛИЕНТА" FontWeight="Bold"/>
+
+        <TextBlock Grid.Row="1" Margin="10,5,6,0" VerticalAlignment="Top" FontStyle="Italic"><Run Text="Дата заселения"/><Run Language="ru-ru" Text=":"/><LineBreak/><Run Language="ru-ru"/></TextBlock>
+        <DatePicker x:Name="datePicker" Margin="10,25,10,0" Height="30" VerticalAlignment="Top" Grid.Row="1" Grid.ColumnSpan="2" Cursor="Hand"/>
+
+        <TextBlock Text="Имя" Grid.Row="1" Margin="10,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontStyle="Italic"/>
+        <TextBox x:Name="firstNameTextBox" Grid.Row="1" Margin="10,78,10,0" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Hand"/>
+
+        <TextBlock Text="Фамилия" Grid.Row="1" Margin="10,113,0,0" HorizontalAlignment="Left" RenderTransformOrigin="0.483,-0.575" VerticalAlignment="Top" FontStyle="Italic"/>
+        <TextBox x:Name="lastNameTextBox" Grid.Row="1" Margin="10,134,10,0" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Hand"/>
+
+        <TextBlock Text="Отчество" Grid.Row="1" Margin="10,169,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontStyle="Italic"/>
+        <TextBox x:Name="patronymicTextBox" Grid.Row="1" Margin="10,190,10,0" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Hand"/>
+
+        <TextBlock Text="Кол-во заселяемых человек" Grid.Row="1" Margin="10,225,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" FontStyle="Italic"/>
+        <TextBox x:Name="peopleCountTextBox" Grid.Row="1" Margin="10,246,10,0" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Hand"/>
+
+        <TextBlock Text="Заселяемая комната" Grid.Row="1" Margin="10,281,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" FontStyle="Italic"/>
+        <TextBox x:Name="roomNumberTextBox" Grid.Row="1" Margin="10,302,10,0" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Hand"/>
+
+        <TextBlock Text="Данные паспорта" Grid.Row="1" Margin="10,337,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" FontStyle="Italic"/>
+        <TextBox x:Name="passportDataTextBox" Grid.Row="1" Margin="10,358,10,0" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Hand"/>
+
+        <TextBlock Text="Цена за комнату" Grid.Row="1" Margin="10,393,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" FontStyle="Italic"/>
+        <TextBox x:Name="roomPriceTextBox" Grid.Row="1" Margin="10,414,10,0" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Hand"/>
+
+        <TextBlock Text="Индивидуальный код клиента" Grid.Row="1" Margin="10,449,158,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontStyle="Italic"/>
+        <TextBox x:Name="customerCodeTextBox" Grid.Row="1" Margin="10,470,10,0" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Hand"/>
+
+        <TextBlock Text="Уровень комнаты" Margin="10,505,252,0" RenderTransformOrigin="0.406,0.504" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" FontStyle="Italic"/>
+        <TextBox x:Name="roomLevelTextBox" Grid.Row="1" Margin="10,526,10,0" Height="30" VerticalAlignment="Top" Grid.ColumnSpan="2" Cursor="Hand"/>
+
+        <Button x:Name="addButton" Content="Добавить" Grid.Row="1" HorizontalAlignment="Left" Margin="10,573,0,0" Width="80" Click="addButton_Click" BorderThickness="0,0,0,0" Background="#FF95796D" FontWeight="Medium" Foreground="White" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="cancelButton" Content="Отмена" Grid.Row="1" Grid.Column="1" Margin="0,573,10,0" Click="cancelButton_Click" HorizontalAlignment="Right" Width="131" Height="30" VerticalAlignment="Top" Background="#FF95796D" Padding="0,0,0,0" FontWeight="Medium" Foreground="White"/>
+    </Grid>
+</Window>
